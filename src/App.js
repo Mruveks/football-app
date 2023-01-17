@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Box } from '@mui/material';
+import { Stack } from '@mui/material';
 
 import './App.css';
 import Home from './pages/Home';
@@ -14,7 +14,7 @@ import Matches from './pages/Matches';
 
 const App = () => {
   return (
-    <Box>
+    <Stack mr="160px" ml="160px">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/transfers" element={<Transfers />} />
       </Routes>
       <Footer />
-    </Box>
+    </Stack>
   );
 }
 
